@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             //
+            // $table->dropColumn('is_favorite');
+            // $table->boolean('is_best_seller')->default(false);
             $table->dropColumn('is_favorite');
             $table->boolean('is_best_seller')->default(false);
         });

@@ -48,8 +48,6 @@ class ProductController extends Controller
         $product->image = $filename;
         $product->save();
 
-        // $data = $request->all();
-        //\App\Models\Product::create($data);
         return redirect()->route('product.index')->with('success', 'Product successfully created');
     }
 
